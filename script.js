@@ -15,14 +15,15 @@ const library = [
     readingStatus: false,
   },
 ];
-const new=[];
+//const new=[];
 const numberOfBooksRead = () => {
+	let count=0;
 	library.forEach(bookread=>{
 		if(bookread.readingStatus===true){
-			new.push(bookread);
+			count++;
 		}
 	})
-	return new;
+	return count
 	//let bookReaded=library.filter(status=>status.readingStatus===true);
 	
   
